@@ -33,9 +33,9 @@ It is interesting to see that in the east and south London, the density of super
 To quantify the rent price movement, the derived quantities about the rent prices: the mean rent price and annual rent increment in percentage are used for analysis. As part of the data exploration and to understand the available data, I use pairwise correlation and multilinear regression to analyse the rent dependence on the venue categories in each borough. The figure below shows the distribution for mean rent price (orange) and percentage annual rent increments (blue). 
 
 <img src="https://github.com/xiaxicheng1989/LondonRentPriceAnalysis/blob/master/Plots/rentCorr.jpg" width="80%">
-The mean rent price appears to be mainly driven by the number of restaurants, Hotels and grocery opportunities. Surprisingly, multi-dimensional linear regression suggests that the rent price is negative affected by the pub/bars and stores in the borough. On the other hand, the rental increments are only driven by the existing restaurants, in the absence of other categories of venues.
+The mean rent price appears to be mainly driven by the number of restaurants, Hotels and grocery opportunities. Surprisingly, multi-dimensional linear regression suggests that the rent price is negative affected by the pub/bars and stores in the borough.
 
-Extrapolation on the rent prices are made for the next 3, 5 and 10 years. These are compared with 
+Extrapolation on the rent prices are also made for the next 3, 5 and 10 years. These are compared with 
 the population density, supermarket density to deliver a selection of boroughs. This selection is then separately confirmed by the technique: K-mean clustering.
 
 ## 4. Final recommendation
@@ -48,3 +48,6 @@ Using multi-dimensional linear regression, I found out that the mean rent price 
 as suitable boroughs to expand the business, as illustrated in figure below in bright yellow:
 
 <img src="https://github.com/xiaxicheng1989/LondonRentPriceAnalysis/blob/master/Plots/RecomKmena.jpg" width="80%">
+
+## 6. Outlook
+This was the initial step of identifying suitable boroughs to grow a business. The next step would identify the most suitable location within a borough for further optimisation. In addition, an exclusive analysis on the local competitors would contribute greatly to the decision making process of the business owner. 
