@@ -1,4 +1,27 @@
-# LondonRentPriceAnalysis
-Here, I use the Foursquare API to gather position data about the London boroughs. These data are further analysed to look for pattern and correlation with the rent price.
+# London Rent Price Analysis
+This project is part of the IBM data science professional certificate.  
 
-Analysis is mainly based on correlation analysis, multiparametric linear regression and clustering.
+The goal is to extract location data from platforms such as [Foursquare API](https://foursquare.com/) to solve real-life business problem. 
+
+## 1. Business problem
+To help smaller business owners in gastronomy expanding their business in London, exposure to the public is as important as a cheap and stable rent. Often, the individual stores are required to be self-supporting regarding groceries. Hence, they rely on the close-by supermarkets to avoid delivery costs. 
+
+The outcome of the project is to provide a location recommendation services to these clients, which reveals the locations in London that are most suitable for the business owner.
+
+## 2. Data
+For now, I only use the following data to provide a location recommendation:  
+- Rent prices statistics from London Datastore of MAYOR OF LONDON (<a href="https://data.london.gov.uk/dataset/average-private-rents-borough">data from 2011 to 2019</a>) 
+
+- London borough's area sizes, population distribution and postal codes (<a href="https://www.doogal.co.uk/london_postcodes.php">data</a>)
+- Sizes of London's boroughs are extracted from <a href="https://en.wikipedia.org/wiki/List_of_London_boroughs">Wikipedia</a> using webscrapping. The detailed postal codes across london are useful for more narrowed data collection using FourSquare.
+    
+- Venue data extraction using Foursquare after popularity (in particular, supermarkets/grocery shops)
+
+### 2.1 Data cleansing
+The rent price data and borough data are all fairly clean and don't require much processing. 
+
+However, when collecting venue data using location data provider, I was limited by 100 venues per call on Foursquare, due to the free license. To maximise the number of outputs, I needed to use finer postal code of all london area, where each on average covers an area of 20m x 20m. After removing duplications, I ended up with over 300000 venues within over 300 categories across the entire city. Out of these over 4000 are major supermarket chains, such as Tesco, Sainsbury's,... 
+
+## 3. Methodology
+To quantify the rent price movement, analysis will be carried out on the derived quantities about therent prices: the mean rent price and annual rent increment in percentage. As part of the data exploration and to understand the available data, I use pairwise correlation and multilinear regression to analyse the rent dependence on the venue categories in each borough.Extrapolation on the rent prices are made for the next 3, 5 and 10 years. These are compared with 
+the population density, supermarket density to deliver a selection of boroughs. This selection is thenseparately confirmed by the technique: K-mean clustering.
