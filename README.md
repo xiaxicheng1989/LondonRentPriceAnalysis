@@ -20,7 +20,12 @@ For now, I only use the following data to provide a location recommendation:
 ### 2.1 Data cleansing
 The rent price data and borough data are all fairly clean and don't require much processing. 
 
-However, when collecting venue data using location data provider, I was limited by 100 venues per call on Foursquare, due to the free license. To maximise the number of outputs, I needed to use finer postal code of all london area, where each on average covers an area of 20m x 20m. After removing duplications, I ended up with over 300000 venues within over 300 categories across the entire city. Out of these over 4000 are major supermarket chains, such as Tesco, Sainsbury's,... 
+However, when collecting venue data using location data provider, I was limited by 100 venues per call on Foursquare, due to the free license. To maximise the number of outputs, I needed to use finer postal code of all london area, where each on average covers an area of 20m x 20m. After removing duplications, I ended up with over 300000 venues within over 300 categories across the entire city. The venue categories can be summarised by:
+
+<img src="https://github.com/xiaxicheng1989/LondonRentPriceAnalysis/blob/master/Plots/CategoryDist.jpg" width="20%">
+
+
+Out of these over 4000 are major supermarket chains, such as Tesco, Sainsbury's,... 
 
 ## 3. Methodology
 To quantify the rent price movement, analysis will be carried out on the derived quantities about therent prices: the mean rent price and annual rent increment in percentage. As part of the data exploration and to understand the available data, I use pairwise correlation and multilinear regression to analyse the rent dependence on the venue categories in each borough.Extrapolation on the rent prices are made for the next 3, 5 and 10 years. These are compared with 
