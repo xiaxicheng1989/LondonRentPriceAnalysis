@@ -44,6 +44,7 @@ My analysis have shown that the most expensive borough is the Kensington and Che
 
 Using multi-dimensional linear regression, I found out that the mean rent price is mostly driven by the number of hotels, Grocery, Gym, Nature, which are all indications of balanced living options. Transport and supermarket don't really affect the rental price. Finally, I recommend:
 – Camden, Hackney, Hammersmith and Fulham, Islington, Lambeth, Southwark, Tower Hamlets, Wandsworth and City of London
+
 as suitable boroughs to expand the business, as illustrated in figure below in bright yellow:
 
 <img src="https://github.com/xiaxicheng1989/LondonRentPriceAnalysis/blob/master/Plots/RecomKmena.jpg" width="80%">
