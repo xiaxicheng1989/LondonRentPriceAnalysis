@@ -30,10 +30,19 @@ Out of these over 4000 are major supermarket chains, such as Tesco, Sainsbury's,
 It is interesting to see that in the east and south London, the density of supermarket is low compared with the high population density, which could already indicate to potential areas to grow business.
 
 ## 3. Methodology
-To quantify the rent price movement, the derived quantities about the rent prices: the mean rent price and annual rent increment in percentage are used for analysis. As part of the data exploration and to understand the available data, I use pairwise correlation and multilinear regression to analyse the rent dependence on the venue categories in each borough. The figure below shows the distribution for
-mean rent price (orange) and percentage annual rent increments (blue). The mean rent price appears to be mainly driven by the number of restaurants, Hotels and grocery opportunities. Surprisingly, multi-dimensional linear regression suggests that the rent price is negative affected by the pub/bars and stores in the borough. On the other hand, the rental increments are only driven by the existing restaurants, in the absence of other categories of venues.
+To quantify the rent price movement, the derived quantities about the rent prices: the mean rent price and annual rent increment in percentage are used for analysis. As part of the data exploration and to understand the available data, I use pairwise correlation and multilinear regression to analyse the rent dependence on the venue categories in each borough. The figure below shows the distribution for mean rent price (orange) and percentage annual rent increments (blue). 
 
 <img src="https://github.com/xiaxicheng1989/LondonRentPriceAnalysis/blob/master/Plots/rentCorr.jpg" width="80%">
+The mean rent price appears to be mainly driven by the number of restaurants, Hotels and grocery opportunities. Surprisingly, multi-dimensional linear regression suggests that the rent price is negative affected by the pub/bars and stores in the borough. On the other hand, the rental increments are only driven by the existing restaurants, in the absence of other categories of venues.
 
 Extrapolation on the rent prices are made for the next 3, 5 and 10 years. These are compared with 
-the population density, supermarket density to deliver a selection of boroughs. This selection is thenseparately confirmed by the technique: K-mean clustering.
+the population density, supermarket density to deliver a selection of boroughs. This selection is then separately confirmed by the technique: K-mean clustering.
+
+## 4. Final recommendation
+My analysis have shown that the most expensive borough is the Kensington and Chelsea, which is followed by Westminster. Boroughs located around these two appear to fall into the next rent price class. However, rent cost seems to be in general higher in the west than in the east. In contrast, east(north) and south(west) London appear to experience a larger annual rent increase. This trend indicates an higher demand in housing and show potential future development. Particular heavily developing boroughs are:
+- Kingston, Hackney, Newham and Barking.
+
+Using multi-dimensional linear regression, I found out that the mean rent price is mostly driven by the number of hotels, Grocery, Gym, Nature, which are all indications of balanced living options. Transport and supermarket don't really affect the rental price. Finally, I recommend:
+– Camden, Hackney, Hammersmith and Fulham, Islington, Lambeth, Southwark, Tower Hamlets, Wandsworth and City of Londonas suitable borough to expand the business, as illustrated in figure below in bright yellow:
+
+<img src="https://github.com/xiaxicheng1989/LondonRentPriceAnalysis/blob/master/Plots/RecomKmena.jpg" width="80%">
